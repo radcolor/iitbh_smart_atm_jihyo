@@ -1,8 +1,8 @@
-## iitbh_smart_atm_jihyo: XAMPP like tool to start and manager our database and other server(s) 
+## jihyo: XAMPP like tool to start and manager our database and other server(s) 
 
-![img](https://img.shields.io/github/license/radcolor/iitbh_smart_atm_jihyo)
+![img](https://img.shields.io/github/license/radcolor/jihyo)
 
- XAMPP like tool to start and manager our database and other server(s), written in rust and svelte! 
+XAMPP like tool to start and manager our database and other server(s), written in rust and svelte! 
 
 ### Setting up the system (UNIX)
 
@@ -41,13 +41,9 @@ bun install
 cargo tauri dev
 ```
 
-### Running screenshots
-
-![img](/app_ss.png)
-
 ### Reporting bug or feature request
 
-You can easily report a bug or request a feature by opening a [pull request](https://github.com/radcolor/iitbh_smart_atm_jihyo/compare) or [opening an issue](https://github.com/radcolor/iitbh_smart_atm_jihyo/issues/new/choose)
+You can easily report a bug or request a feature by opening a [pull request](https://github.com/radcolor/jihyo/compare) or [opening an issue](https://github.com/radcolor/jihyo/issues/new/choose)
 
 **How to report a bug/issue**
 
@@ -60,6 +56,6 @@ You can easily report a bug or request a feature by opening a [pull request](htt
 
 ### Contributing
 
-Read [Contributing.md](https://github.com/radcolor/iitbh_smart_atm_jihyo/blob/master/CONTRIBUTING.md) to get the application running locally and various ways to help us on development.
+Read [Contributing.md](https://github.com/radcolor/jihyo/blob/master/CONTRIBUTING.md) to get the application running locally and various ways to help us on development.
 
-iitbh_smart_atm_jihyo Copyright (c) 2023 Shashank Baghel, IBITF. All rights reserved.
+jihyo Copyright (c) 2023 Shashank Baghel. All rights reserved.

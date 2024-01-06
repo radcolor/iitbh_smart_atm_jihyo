@@ -11,10 +11,21 @@
   },
   "tauri": {
     "allowlist": {
-      "all": false,
+      "all": true,
+      "fs": {
+        "all": true
+      },
       "shell": {
-        "all": false,
-        "open": true
+        "all": true,
+        "open": true,
+        "execute": true,
+        "scope": [
+          {
+            "name": "start_dbcluster",
+            "cmd": "surreal",
+            "args": true
+          }
+        ]
       }
     },
     "bundle": {

@@ -6,14 +6,20 @@ use log::{error, info};
 use std::net::TcpListener;
 
 #[tauri::command]
-async fn is_port_taken(port: u16) {
+async fn is_port_free(port: u16) -> bool {
+    /*
+       :8000 - Surreal DB server
+       :8080 - Dispenser server
+       :XXXX - Reserved for CV server
+    */
     match TcpListener::bind(("127.0.0.1", port)) {
         Ok(_) => {
             info!("Port {} is free.", port);
+            true
         }
         Err(_) => {
             error!("Port {} is taken.", port);
-            std::process::exit(1);
+            false
         }
     }
 }
@@ -33,7 +39,7 @@ fn main() {
     setup_logger();
 
     tauri::Builder::default()
-        .invoke_handler(tauri::generate_handler![is_port_taken])
+        .invoke_handler(tauri::generate_handler![is_port_free])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }
