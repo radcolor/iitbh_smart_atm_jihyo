@@ -1,8 +1,8 @@
 [package]
 name = "iitbh_smart_atm_jihyo"
-version = "0.0.0"
+version = "0.1.0"
 description = "A Tauri App"
-authors = ["you"]
+authors = ["iitbh"]
 license = ""
 repository = ""
 edition = "2021"

@@ -7,7 +7,7 @@ export default {
   kit: {
     // ... other config
     alias: {
-      "@/*": "./src/*",
+      "@/*": "./src-ui/*",
     },
   },
 };
